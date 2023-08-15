@@ -21,7 +21,7 @@ services:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: DesignPattern
     volumes:
-      - /home/admin1/PHP-DESIGNPATTERN/db:/var/lib/mysql
+      - /home/admin1//my-db:/var/lib/mysql
       - /home/admin1/PHP-DESIGNPATTERN:/home
     networks:
       - my-net
