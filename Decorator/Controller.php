@@ -3,8 +3,8 @@ namespace PHPDesignPattern\Decorator;
 
 interface Controller{
     function set($key, $value);
-    function get($key);
+    function get($id);
     function print(): string;
-    function delete();
+    function delete($id);
     function save();
 }
