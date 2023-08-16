@@ -1,6 +1,6 @@
 <?php
 namespace PHPDesignPattern\Decorator;
-
+require_once 'BehavioralController.php';
 use Exception;
 
 class AuthenticatorController extends BehavioralController{
@@ -33,10 +33,10 @@ class AuthenticatorController extends BehavioralController{
             throw new Exception("NOT AUTHORIZED!");
     }
 
-    function delete()
+    function delete($id)
     {
         if($this->authorize($_SERVER["token"]))
-            parent::delete();
+            parent::delete($id);
         else
             throw new Exception("NOT AUTHORIZED!");
     }

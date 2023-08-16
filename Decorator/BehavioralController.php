@@ -21,9 +21,9 @@ class BehavioralController implements Controller{
         return $this->controller->print();
     }
     
-    function delete()
+    function delete($id)
     {
-        $this->controller->delete();
+        $this->controller->delete($id);
     }
 
     function save()
